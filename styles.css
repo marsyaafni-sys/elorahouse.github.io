@@ -144,13 +144,9 @@ p {
   letter-spacing: 0.12em;
 }
 .logo {
-  width: 34px;
-  height: 34px;
-  border: 1px solid #111;
-  display: grid;
-  place-items: center;
-  font-family: var(--serif);
-  font-size: 13px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 .nav-links {
   display: flex;

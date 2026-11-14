@@ -166,7 +166,7 @@ function header() {
   const active = (p) => (path === p ? "active" : "");
   return `<header class="navbar"><div class="container nav-inner">
  <button class="icon-btn mobile-toggle" onclick="toggleDrawer()" aria-label="Menu">${icon.menu}</button>
- <a class="brand" href="index.html"><span class="logo">EH</span><span>ELORA HOUSE</span></a>
+ <a class="brand" href="index.html"><img class="logo" src="image/logo.png" alt="ELORA HOUSE"><span>ELORA HOUSE</span></a>
  <nav class="nav-links"><a class="${active("index.html")}" href="index.html">Home</a><a class="${active("about.html")}" href="about.html">About Us</a><a class="${active("catalogue.html")}" href="catalogue.html">Catalogue</a></nav>
  <div class="nav-actions"><a class="icon-btn" href="wishlist.html" aria-label="Wishlist">${icon.heart}<span class="badge-count" id="wishCount">0</span></a><a class="icon-btn" href="cart.html" aria-label="Cart">${icon.cart}<span class="badge-count" id="cartCount">0</span></a><a class="icon-btn" href="login.html" aria-label="Login">${icon.user}</a></div>
  </div></header>
