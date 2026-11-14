@@ -3,6 +3,7 @@
 Static responsive prototype based on SRS v0.4.
 
 ## Pages
+
 - Home
 - About Us
 - Catalogue
@@ -13,9 +14,11 @@ Static responsive prototype based on SRS v0.4.
 - Dummy Login
 
 ## Run
+
 Open `index.html` directly in a browser, or serve the folder with any simple local web server.
 
 ## Notes
+
 - No database/backend is required.
 - Wishlist and cart use browser localStorage.
 - Login and checkout are dummy/prototype flows.
