@@ -3,13 +3,15 @@
 products.push(
   {
     id: 1,
+    sku: "BLS-010",
     name: "White Ruffle Trim Blouse",
     cat: "Top",
     sub: "Blouse & Shirt",
     price: 205000,
     img: "./image/White Ruffle Trim Blouse.png",
-    desc: "A feminine everyday blouse with a relaxed Korean-inspired silhouette.",
-    material: "Rayon",
+    desc: "Blouse putih tanpa lengan dengan hiasan rumbai vertikal dan deretan kancing ganda (double-breasted) yang unik.",
+    material: "Chiffon",
+    fit: "Regular Fit",
     color: "Ivory",
     sizes: ["S", "M", "L"],
     stock: 12,
