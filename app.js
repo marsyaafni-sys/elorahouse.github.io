@@ -1,5 +1,4 @@
-const products = [
-];
+const products = [];
 
 let wishlist = JSON.parse(localStorage.getItem("eloraWishlist") || "[]");
 let cart = JSON.parse(localStorage.getItem("eloraCart") || "[]");
@@ -70,7 +69,7 @@ function header() {
 }
 function footer() {
   return `<footer class="footer"><div class="container"><div class="footer-grid">
- <div><div class="footer-brand">ELORA HOUSE</div><p style="margin-top:12px;max-width:300px">Made to Be You — Korean-inspired fashion that feels simple, feminine and effortless.</p></div>
+ <div><div class="footer-brand">ELORA HOUSE</div><p style="margin-top:12px;max-width:300px">Made to Be You — Korean inspired fashion that feels simple, feminine and effortless.</p></div>
  <div><h4>Explore</h4><p><a href="index.html">Home</a></p><p><a href="about.html">About Us</a></p><p><a href="catalogue.html">Catalogue</a></p></div>
  <div><h4>Customer</h4><p><a href="wishlist.html">Wishlist</a></p><p><a href="cart.html">Cart</a></p><p><a href="login.html">Login</a></p></div>
  <div><h4>Follow</h4><p>Instagram</p><p>TikTok</p><p>hello@elorahouse.com</p></div>
