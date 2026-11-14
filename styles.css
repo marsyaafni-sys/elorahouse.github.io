@@ -644,6 +644,7 @@ p {
 .detail-qty {
   display: flex;
   align-items: center;
+  gap: 8px;
   border: 1px solid #1a1a1a;
   width: max-content;
 }
@@ -760,6 +761,15 @@ p {
 .item-info p {
   font-size: 12px;
   margin-top: 4px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity span {
+  min-width: 1.5em;
+  text-align: center;
 }
 .item-actions {
   display: flex;
