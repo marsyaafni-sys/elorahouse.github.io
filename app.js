@@ -366,6 +366,15 @@ function init() {
     toast("Dummy login successful");
     setTimeout(() => (location.href = "index.html"), 600);
   });
+  const paymentMethod = document.querySelector("#paymentMethod");
+  const qrisPayment = document.querySelector("#qrisPayment");
+  if (paymentMethod && qrisPayment) {
+    const updateQrisVisibility = () => {
+      qrisPayment.hidden = paymentMethod.value !== "qris";
+    };
+    paymentMethod.addEventListener("change", updateQrisVisibility);
+    updateQrisVisibility();
+  }
   document.querySelector("#checkoutForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!cart.length) {

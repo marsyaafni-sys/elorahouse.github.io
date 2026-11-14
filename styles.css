@@ -856,6 +856,19 @@ p {
   color: #555;
   margin-bottom: 18px;
 }
+.qris-payment {
+  margin-top: 18px;
+}
+.qris-payment p {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.qris-code {
+  width: min(100%, 320px);
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--line);
+}
 .empty {
   text-align: center;
   padding: 80px 20px;

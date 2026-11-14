@@ -12,9 +12,12 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <div class="eyebrow">Dummy checkout</div>
+          <div class="eyebrow">Make It Yours</div>
           <h1>Checkout</h1>
-          <p>This prototype uses dummy payment and shipping.</p>
+          <p>
+            Just a few more steps until your new favorite pieces are on their
+            way to you. Let's make it yours!
+          </p>
         </div>
       </section>
       <section class="section">
@@ -22,8 +25,8 @@
           <form id="checkoutForm" class="cart-layout">
             <div>
               <div class="notice">
-                No real payment is processed. This checkout is for prototype
-                demonstration only.
+                Please fill in your information correctly to ensure a smooth
+                delivery.
               </div>
               <div class="form-grid">
                 <div class="field">
@@ -51,10 +54,9 @@
                 </div>
                 <div class="field">
                   <label>Payment</label>
-                  <select>
-                    <option>Dummy Payment</option>
-                    <option>Bank Transfer (Demo)</option>
-                    <option>Cash on Delivery (Demo)</option>
+                  <select id="paymentMethod">
+                    <option value="qris">QRIS</option>
+                    <option value="cod">Cash on Delivery</option>
                   </select>
                 </div>
                 <div class="field">
@@ -65,15 +67,21 @@
                   </select>
                 </div>
               </div>
-              <button class="btn" style="margin-top: 25px">
-                Place dummy order
-              </button>
+              <div class="qris-payment" id="qrisPayment" hidden>
+                <p>Scan this QR code to pay with QRIS.</p>
+                <img
+                  class="qris-code"
+                  src="image/qris.jpg"
+                  alt="QRIS payment code"
+                />
+              </div>
+              <button class="btn" style="margin-top: 25px">Checkout Now</button>
             </div>
             <aside class="summary">
               <h3>Order note</h3>
               <p style="font-size: 12px">
-                Your cart items are stored only in this browser using
-                localStorage. No database or real authentication is used.
+                Please double-check your shipping details before placing your
+                order.
               </p>
             </aside>
           </form>
